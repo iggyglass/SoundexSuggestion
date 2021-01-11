@@ -1,0 +1,14 @@
+C:\Users\Iggy\source\repos\Soundex\Soundex\bin\Debug\netcoreapp3.1\Soundex.exe
+C:\Users\Iggy\source\repos\Soundex\Soundex\bin\Debug\netcoreapp3.1\Soundex.deps.json
+C:\Users\Iggy\source\repos\Soundex\Soundex\bin\Debug\netcoreapp3.1\Soundex.runtimeconfig.json
+C:\Users\Iggy\source\repos\Soundex\Soundex\bin\Debug\netcoreapp3.1\Soundex.runtimeconfig.dev.json
+C:\Users\Iggy\source\repos\Soundex\Soundex\bin\Debug\netcoreapp3.1\Soundex.dll
+C:\Users\Iggy\source\repos\Soundex\Soundex\bin\Debug\netcoreapp3.1\Soundex.pdb
+C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.csprojAssemblyReference.cache
+C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.AssemblyInfoInputs.cache
+C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.AssemblyInfo.cs
+C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.csproj.CoreCompileInputs.cache
+C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.dll
+C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.pdb
+C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.genruntimeconfig.cache
+C:\Users\Iggy\source\repos\Soundex\Soundex\bin\Debug\netcoreapp3.1\words_alpha.txt
