@@ -57,10 +57,12 @@ namespace Soundex
                 }
             }
 
+            if (current == root) return null;
+
             return current;
         }
 
-        public List<string> GetAllMatchingPrefix(string prefix)
+        public List<string> GetAllMatchingWords(string prefix)
         {
             List<string> words = new List<string>();
             TrieNode current = root;
@@ -99,10 +101,18 @@ namespace Soundex
             return words;
         }
 
-        private List<string> getWords(TrieNode node, string prefix)
+        private void getWords(List<string> words, TrieNode node, string prefix)
+        {
+
+        }
+
+
+
+        /*private List<string> getWords(TrieNode node, string prefix)
         {
             List<string> words = new List<string>();
 
+            // TODO: Fix this badness: (make not recursive)
             prefix += node.Letter;
             if (node.IsWord) words.Add(prefix);
 
@@ -112,6 +122,6 @@ namespace Soundex
             }
 
             return words;
-        }
+        }*/
     }
 }

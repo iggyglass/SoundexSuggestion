@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Iggy\\source\\repos\\Soundex\\Tests\\Tests.csproj": {}
+    "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Iggy\\source\\repos\\Soundex\\Soundex\\Soundex.csproj": {
+    "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Soundex\\Soundex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Iggy\\source\\repos\\Soundex\\Soundex\\Soundex.csproj",
+        "projectUniqueName": "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Soundex\\Soundex.csproj",
         "projectName": "Soundex",
-        "projectPath": "C:\\Users\\Iggy\\source\\repos\\Soundex\\Soundex\\Soundex.csproj",
-        "packagesPath": "C:\\Users\\Iggy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Iggy\\source\\repos\\Soundex\\Soundex\\obj\\",
+        "projectPath": "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Soundex\\Soundex.csproj",
+        "packagesPath": "C:\\Users\\iggy.glassman\\.nuget\\packages\\",
+        "outputPath": "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Soundex\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Iggy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\iggy.glassman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -29,6 +31,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +43,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -55,25 +59,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Iggy\\source\\repos\\Soundex\\Tests\\Tests.csproj": {
+    "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Iggy\\source\\repos\\Soundex\\Tests\\Tests.csproj",
+        "projectUniqueName": "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "C:\\Users\\Iggy\\source\\repos\\Soundex\\Tests\\Tests.csproj",
-        "packagesPath": "C:\\Users\\Iggy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Iggy\\source\\repos\\Soundex\\Tests\\obj\\",
+        "projectPath": "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\iggy.glassman\\.nuget\\packages\\",
+        "outputPath": "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Iggy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\iggy.glassman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -84,9 +90,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Iggy\\source\\repos\\Soundex\\Soundex\\Soundex.csproj": {
-                "projectPath": "C:\\Users\\Iggy\\source\\repos\\Soundex\\Soundex\\Soundex.csproj"
+              "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Soundex\\Soundex.csproj": {
+                "projectPath": "\\\\GMRDC1\\Folder Redirection\\iggy.glassman\\Documents\\Visual Studio 2019\\Projects\\SoundexSuggestion\\Soundex\\Soundex.csproj"
               }
             }
           }
@@ -99,6 +106,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -132,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

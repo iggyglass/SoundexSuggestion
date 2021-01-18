@@ -28,6 +28,9 @@ namespace Soundex
                 words.Insert(lines[i]);
             }
 
+            // Look into https://en.wikipedia.org/wiki/Edit_distance
+            // and https://en.wikipedia.org/wiki/Levenshtein_distance
+
             // The actual thing
             while (true)
             {
@@ -36,7 +39,7 @@ namespace Soundex
                 string soundex = Soundex.StringToSoundex(input);
 
                 Console.WriteLine("Matches: ");
-                List<string> matches = words.GetAllMatchingPrefix(input);
+                List<string> matches = words.GetAllMatchingWords(input);
 
                 for (int i = 0; i < matches.Count; i++)
                 {

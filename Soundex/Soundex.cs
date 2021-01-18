@@ -87,11 +87,14 @@ namespace Soundex
             }
 
             // Ensure length of 4
-            /*if (builder.Length != 4)
+            /* if (builder.Length > 4)
             {
-                while (builder.Length < 4) builder.Append('0');
+                builder.Append('0', 4 - builder.Length);
+            }
+            else if (builder.Length < 4)
+            {
                 builder.Remove(4, builder.Length - 4);
-            }*/
+            } */
 
             return builder.ToString();
         }
