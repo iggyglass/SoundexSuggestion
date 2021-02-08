@@ -50,6 +50,11 @@ namespace Soundex
             ['r'] = '6'
         };
 
+        /// <summary>
+        /// Converts a word to its corresponding soundex
+        /// </summary>
+        /// <param name="str">The word to convert</param>
+        /// <returns>The soundex code</returns>
         public static string StringToSoundex(string str)
         {
             StringBuilder builder = new StringBuilder();
@@ -87,16 +92,65 @@ namespace Soundex
             }
 
             // Ensure length of 4
-            /* if (builder.Length > 4)
+            if (builder.Length > 4)
             {
                 builder.Append('0', 4 - builder.Length);
             }
             else if (builder.Length < 4)
             {
                 builder.Remove(4, builder.Length - 4);
-            } */
+            }
 
             return builder.ToString();
+        }
+
+        /// <summary>
+        /// Takes in two words and finds how close they are (in terms of soundex) on a scale of 0 to 4 (4 being exact match)
+        /// </summary>
+        /// <param name="a">The first word</param>
+        /// <param name="b">The second word</param>
+        /// <returns>The difference</returns>
+        public static int Difference(string a, string b) // using the rules outlined here: https://www.techrepublic.com/blog/software-engineer/how-do-i-implement-the-soundex-function-in-c/#:~:text=Soundex%20is%20an%20algorithm%20that,pronounced%20exactly%20the%20same%20way
+        {
+            string soundexA = StringToSoundex(a);
+            string soundexB = StringToSoundex(b);
+            int diff = 0;
+
+            if (soundexA == soundexB) return 4;
+
+            string soundexANums = soundexA.Substring(1);
+            string soundexALastTwo = soundexA.Substring(2);
+            string soundexAMiddleTwo = soundexA.Substring(1, 2);
+
+            if (soundexB.Contains(soundexANums))
+            {
+                diff = 3;
+            }
+            else if (soundexB.Contains(soundexALastTwo))
+            {
+                diff = 2;
+            }
+            else if (soundexB.Contains(soundexAMiddleTwo))
+            {
+                diff = 2;
+            }
+            else
+            {
+                for (int i = 1; i < soundexA.Length; i++)
+                {
+                    if (soundexB.Contains(soundexA[i]))
+                    {
+                        diff++;
+                    }
+                }
+            }
+
+            if (soundexA[0] == soundexB[0])
+            {
+                diff++;
+            }
+
+            return diff;
         }
     }
 }

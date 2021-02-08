@@ -29,19 +29,22 @@ namespace Soundex
             }
 
             current.IsWord = true;
+            current.Value = word;
         }
 
         public bool Remove(string word)
         {
-            TrieNode current = Search(word);
+            TrieNode current = search(word);
 
             if (!current.IsWord) return false;
 
             current.IsWord = false;
+            current.Value = "";
+
             return true;
         }
 
-        public TrieNode Search(string prefix)
+        private TrieNode search(string prefix)
         {
             TrieNode current = root;
 
@@ -64,7 +67,6 @@ namespace Soundex
 
         public List<string> GetAllMatchingWords(string prefix)
         {
-            List<string> words = new List<string>();
             TrieNode current = root;
 
             for (int i = 0; i < prefix.Length; i++)
@@ -75,53 +77,44 @@ namespace Soundex
                 }
                 else
                 {
-                    return words;
+                    return new List<string>();
                 }
             }
 
-            if (current.IsWord) words.Add(prefix);
-
-            foreach (var node in current.Children)
-            {
-                words.AddRange(getWords(node.Value, prefix));
-            }
+            List<string> words = getWords(current);   
 
             return words;
         }
 
         public List<string> GetAllWords()
         {
-            List<string> words = new List<string>();
+            return getWords(root);
+        }
 
-            foreach (var node in root.Children)
+        private List<string> getWords(TrieNode start)
+        {
+            List<string> words = new List<string>();
+            Queue<TrieNode> nodes = new Queue<TrieNode>();
+            TrieNode current;
+
+            nodes.Enqueue(start);
+
+            while (nodes.Count > 0)
             {
-                words.AddRange(getWords(node.Value, ""));
+                current = nodes.Dequeue();
+
+                if (current.IsWord)
+                {
+                    words.Add(current.Value);
+                }
+
+                foreach (var kvp in current.Children)
+                {
+                    nodes.Enqueue(kvp.Value);
+                }
             }
 
             return words;
         }
-
-        private void getWords(List<string> words, TrieNode node, string prefix)
-        {
-
-        }
-
-
-
-        /*private List<string> getWords(TrieNode node, string prefix)
-        {
-            List<string> words = new List<string>();
-
-            // TODO: Fix this badness: (make not recursive)
-            prefix += node.Letter;
-            if (node.IsWord) words.Add(prefix);
-
-            foreach (var kvp in node.Children)
-            {
-                words.AddRange(getWords(kvp.Value, prefix));
-            }
-
-            return words;
-        }*/
     }
 }

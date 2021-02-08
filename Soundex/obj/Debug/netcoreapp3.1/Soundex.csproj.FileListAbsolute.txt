@@ -12,3 +12,9 @@ C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.dll
 C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.pdb
 C:\Users\Iggy\source\repos\Soundex\Soundex\obj\Debug\netcoreapp3.1\Soundex.genruntimeconfig.cache
 C:\Users\Iggy\source\repos\Soundex\Soundex\bin\Debug\netcoreapp3.1\words_alpha.txt
+\\GMRDC1\Folder Redirection\iggy.glassman\Documents\Visual Studio 2019\Projects\SoundexSuggestion\Soundex\obj\Debug\netcoreapp3.1\Soundex.csprojAssemblyReference.cache
+\\GMRDC1\Folder Redirection\iggy.glassman\Documents\Visual Studio 2019\Projects\SoundexSuggestion\Soundex\obj\Debug\netcoreapp3.1\Soundex.AssemblyInfoInputs.cache
+\\GMRDC1\Folder Redirection\iggy.glassman\Documents\Visual Studio 2019\Projects\SoundexSuggestion\Soundex\obj\Debug\netcoreapp3.1\Soundex.AssemblyInfo.cs
+\\GMRDC1\Folder Redirection\iggy.glassman\Documents\Visual Studio 2019\Projects\SoundexSuggestion\Soundex\obj\Debug\netcoreapp3.1\Soundex.csproj.CoreCompileInputs.cache
+\\GMRDC1\Folder Redirection\iggy.glassman\Documents\Visual Studio 2019\Projects\SoundexSuggestion\Soundex\obj\Debug\netcoreapp3.1\Soundex.dll
+\\GMRDC1\Folder Redirection\iggy.glassman\Documents\Visual Studio 2019\Projects\SoundexSuggestion\Soundex\obj\Debug\netcoreapp3.1\Soundex.pdb

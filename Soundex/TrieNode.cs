@@ -4,12 +4,13 @@ using System.Text;
 
 namespace Soundex
 {
-    public class TrieNode
+    internal class TrieNode
     {
 
         public char Letter { get; private set; }
         public Dictionary<char, TrieNode> Children { get; set; }
         public bool IsWord { get; set; }
+        public string Value { get; set; }
 
         public TrieNode(char c)
         {
